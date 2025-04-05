@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Amritha T Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="video-container">
+    <video autoplay loop muted playsinline id="back-vid">
+      <source src="images/galaxy.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="border">
+    <nav class="navbar">
+      <div class="logo">CONTACT ME</div>
+      <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html"  class="active">Contact</a></li>
+      </ul>
+      <details class="menu">
+        <summary>☰</summary>
+        <ul class="nav-links">
+          <li><a href="home.html" class="active" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        
+        </ul>
+      </details>
+    </nav>
+
+    <div class="content">
+       
+    
+        <h1>Feel free to contact me</h1>
+        <div class="contact-info">
+          <p><strong>Email:</strong><a href="mailto:amritha1305@gmail.com"><span class="blue"> amritha1305@gmail.com</span></a></p>
+          <p>
+            <strong>Phone:</strong>
+            <span class="blue">+91 91887 20751</span>
+          </p>
+          <p>
+            <strong>Location:</strong>
+            <span class="blue"> Thrissur, India</span>
+          </p>
+         
+        </div>
+    
+        <!-- Contact Form using the form tag -->
+        <form action="mailto:amritha1305@gmail.com" method="post" enctype="text/plain" class="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          
+          <!-- Wrapper div for the buttons -->
+          <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+          </div>
+      </form>
+    
+        
+
+    </div>
+  </div>
+  
+</body>
+</html>

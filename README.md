@@ -1,1 +1,1 @@
-# Portfolio-Website
+Welcome to my personal portfolio — a futuristic, interactive, and visually engaging space that reflects my passion for creativity and technology. Set against a stunning video background, my portfolio blends modern design elements like glassmorphism, animated transitions, and responsive layouts to create a truly immersive experience.
