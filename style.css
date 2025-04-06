@@ -3,24 +3,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
-}.video-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
 }
-p{
-  font-size: 1.3rem;
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
 #back-vid {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
+p{
+  font-size: 1.3rem;
+}
+
+
 
 .overlay {
   position: absolute;
@@ -29,9 +33,6 @@ p{
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
- 
- 
-  
   width: 80%;
   max-width: 600px;
   opacity: 1;
@@ -68,7 +69,7 @@ footer {
   transform: translateX(-50%);
   text-align: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Optional: for better visibility */
+  background: rgba(0, 0, 0, 0.5); 
   color: white;
   margin: 10px 0;
 }
@@ -110,21 +111,7 @@ body {
   overflow-x: hidden;
 }
 
-.video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
 
-#back-vid {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .border {
   width: 95%;
@@ -165,7 +152,7 @@ body {
   padding: 15px 25px;
   transition: 0.3s;
   border-radius: 30px;
-  transform: scale(1.1); /* Slight zoom */
+  transform: scale(1.1);
  
 }
 
@@ -252,8 +239,8 @@ body {
   top: 55%;
   left: 60%;
   transform: translate(-50%, -50%);
-  width: 20vw; /* use viewport width */
-  max-width: 250px; /* prevent it from getting too big */
+  width: 20vw; 
+  max-width: 250px; 
   animation: float 3s infinite ease-in-out;
 }
 
@@ -262,7 +249,7 @@ body {
   .astronaut {
     top: 93%;
     left: 65%;
-    width: 35vw; /* smaller screen: more width */
+    width: 35vw; 
     max-width: 200px;
   }
 }
@@ -271,7 +258,7 @@ body {
   .astronaut {
     top: 175%;
     left: 105%;
-    width: 35vw; /* smaller screen: more width */
+    width: 35vw; 
     max-width: 100px;
   }
 }
@@ -289,7 +276,7 @@ body {
   50% { transform: translate(-50%, -50%) translateY(10px); }
   100% { transform: translate(-50%, -50%) translateY(-10px); }
 }
-/* Container holding astronaut and interest boxes */
+
 
 
 
@@ -303,19 +290,19 @@ body {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); /* Glowing effect */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6); 
   
 }
 
-/* Profile Picture Image */
+
 .profile-pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: contrast(1.2) brightness(1.1); /* Enhances the image */
+  filter: contrast(1.2) brightness(1.1); 
 }
 
-/* Holographic Overlay */
+
 .profile-pic::before {
   
   content: "";
@@ -330,7 +317,7 @@ body {
   animation: holo-glow 4s infinite linear;
 }
 
-/* Animated Holographic Shine */
+
 .profile-pic::after {
   content: "";
   position: absolute;
@@ -343,32 +330,32 @@ body {
   animation: shine 3s infinite linear;
 }
 
-/* Moving Holographic Glow */
+
 @keyframes holo-glow {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
-/* Light Shine Animation */
+
 @keyframes shine {
   0% { left: -100%; }
   100% { left: 100%; }
 }
 
 .box {
-  border: 1px solid rgba(74, 207, 238, 0.6); /* Light blue border */
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent dark background */
-  color: #ffffff; /* White text */
+  border: 1px solid rgba(74, 207, 238, 0.6); 
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #ffffff; 
   border-radius: 10px;
-  margin-top: 20px; /* Fixed unit */
+  margin-top: 20px; 
   margin-bottom: 10px;
   padding: 10px 15px;
-  backdrop-filter: blur(5px); /* Glassmorphism effect */
+  backdrop-filter: blur(5px); 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .box:hover {
-  transform: scale(1.03); /* Slight zoom */
-  box-shadow: 0 0 15px rgba(74, 207, 238, 0.8); /* Increased glow */
+  transform: scale(1.03); /
+  box-shadow: 0 0 15px rgba(74, 207, 238, 0.8); 
 }
 
 
@@ -380,6 +367,8 @@ body {
   gap: 15px;
   justify-content: left;
   margin-top: 20px;
+  z-index: 10;
+  position: relative;
 }
 
 .social-icons {
@@ -408,6 +397,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Inter', sans-serif;
   
 }
 
@@ -472,7 +462,7 @@ body {
   color: #38bdf8;
 }
 
-/* Contact Form Styling */
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -515,15 +505,15 @@ body {
 .skills-container {
   margin-top: 20px;
   text-align: center;
-  width: 120%;
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1300px;
   background: white;
   padding: 20px 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout for Three Boxes */
+
 .skills-boxes {
   display: flex;
   justify-content: space-between;
@@ -532,7 +522,7 @@ body {
   
 }
 
-/* Individual Skill Boxes */
+
 .skill-box {
   flex: 1;
   background:lightblue;
@@ -542,7 +532,7 @@ body {
   text-align: left;
 }
 
-/* List Styling */
+
 .skill-box ul {
   list-style-type: none;
   padding: 0;
@@ -558,11 +548,11 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .skill-box:hover{
-  transform: scale(1.02); /* Slight zoom */
+  transform: scale(1.02); 
   
 }
 
-/* Skill Bar Styles */
+
 .skill {
   margin: 10px 0;
 }
@@ -581,7 +571,7 @@ body {
   border-radius: 5px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
   .skills-boxes {
       flex-direction: column;
@@ -593,7 +583,7 @@ body {
 }
 .button-group {
   display: flex;
-  gap: 10px; /* Adjust spacing between buttons */
+  gap: 10px; 
   color: black;
 }
 
@@ -632,7 +622,7 @@ body {
 }
 
 .box:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
  
 }
 
@@ -687,6 +677,6 @@ body {
 .typing-effect {
   overflow: hidden;
   white-space: nowrap;
-  width: 0; /* Start hidden */
+  width: 0; 
   animation: typing 3s steps(30) forwards;
 }
