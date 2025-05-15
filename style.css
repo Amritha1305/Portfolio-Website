@@ -247,19 +247,7 @@ body {
 @media (min-width:500px) and (max-width: 768px) {
 
   .astronaut {
-    top: 93%;
-    left: 65%;
-    width: 35vw; 
-    max-width: 200px;
-  }
-}
-@media (max-width: 499px) {
-  
-  .astronaut {
-    top: 175%;
-    left: 105%;
-    width: 35vw; 
-    max-width: 100px;
+   display: none;
   }
 }
 
